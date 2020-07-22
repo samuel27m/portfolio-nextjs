@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$dark: #0B2027;
+$white: #FAFFFD;
+$black-olive: #3C3C3C;
+$red: #FF5A5F;
+$metallic-seaweed: #087E8B;
+$persian-orange: #DB995A;
+$grey-with-opacity: rgba(255, 255, 255, .5);
+
+$header-height: 100px;
+$footer-height: 45px;
+
+$mobile-width: 768px;
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $white;
+    background-color: $dark;
+}
+
+.main-header {
+    min-height: $header-height;
+    padding: 0;
+    
+    .navbar-toggler {
+        display: none;
+    }
+    
+    .logo-wrapper {
+        max-width: $header-height;
+        max-height: $header-height;
+    }
+    
+    .link-wrapper {
+        float: right;
+    }
+
+    .nav-item {
+        font-size: 20px;
+        margin-left: 25px;
+    }
+
+    .nav-link {
+        color: $white;
+        text-decoration: none;
+        
+        &.active {
+            color: $persian-orange;
+            font-weight: bold; 
+        }
+
+        &:hover {
+            font-weight: inherit;
+            font-weight: bold;
+        }
+    }
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - #{$header-height} - #{$footer-height});
+}
+
+.switch-wrapper {
+    position: relative;
+}
+
+.switch-wrapper > div {
+    position: absolute;
+}
+
+a {
+    color: $red;
+    text-decoration: underline;
+
+    &:hover {
+        font-weight: bold;
+        color: $red;
+    }
+}
+
+.text-red {
+    color: $red;
+}
+
+.button {
+    width: 250px;
+    height: 50px;
+    padding: 0 30px;
+    font-size: 20px;
+    
+    color: $white;
+    background: $metallic-seaweed;
+    
+    &:focus,
+    &:active {
+        outline: none !important;
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+    }
+
+    &:hover {
+        color: $white;
+        font-weight: bold;
+    }
+}
+
+/** Footer styles */
+
+.footer {
+    min-height: $footer-height;
+    text-align: center;
+    color: $grey-with-opacity;
+    font-size: 14px;
+    
+    .inner p {
+        margin-bottom: 0px;
+    }
+}
+
+/** Homepage styles **/
+
+.homepage {
+    max-width: 375px;
+
+    .intro-text {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+}
+
+/** Portfolio styles **/
+
+.portfolio {
+    width: 100%;
+
+    .row {
+        margin-bottom: 3.5rem;
+
+        @include mobile {
+            margin-bottom: 0;
+        }
+    }
+
+    .button-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+        @include mobile {
+            margin-bottom: 25px;
+            margin-top: 0px;
+        }
+    }
+
+    .project-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 250px;
+        background-color: $black-olive;
+        border-radius: 0.25rem;
+        padding: 20px;
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .box-title {
+            font-size: 20px;
+        }
+
+        .box-description {
+            font-size: 16px;
+            color: $red;
+            text-align: center;
+        }
+
+        .box-button {
+            width: 100%;
+            height: 35px;
+            padding: 0 30px;
+            font-size: 16px;
+            font-weight: 300;
+            
+            color: $white;
+            background: $metallic-seaweed;
+            
+            &:focus,
+            &:active {
+                outline: none !important;
+                box-shadow: none !important;
+                -webkit-box-shadow: none !important;
+            }
+        
+            &:hover {
+                color: $white;
+                font-weight: bold;
+            }
+        }
+        
+    }
+}
+
+
+
+/** About page styles */
+.about {
+    font-size: 22px;
+    
+    @include mobile {
+        font-size: 18px;
+    }
+
+    .offered-services-text {
+        color: $persian-orange;
+        font-weight: bold;
+        margin-top: 75px;
+        margin-bottom: 75px;
+
+        @include mobile {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .offered-services {
+        margin-bottom: 75px;
+        
+        @include mobile {
+            margin-bottom: 1rem;
+        }
+
+        .icons .icon {
+            font-size: 64px;
+            @include mobile {
+                font-size: 48px;
+            }
+        }
+    }
+
+    .button {
+        margin-bottom: 0px;
+
+        @include mobile {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+/** Contact page styles */
+
+.contact {
+    padding: 0px 30px;
+    width: 70%;
+    @include mobile {
+        width: 100%;
+    }
+
+    .contact-text {
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+
+    .contact-subtext {
+        margin-bottom: 1rem;
+        color: $grey-with-opacity;
+        font-size: 16px;
+    }
+}
