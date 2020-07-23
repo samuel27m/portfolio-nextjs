@@ -9,7 +9,7 @@ export default function Header() {
      * Returns classes
      * @param string pathname 
      */
-    function getLinkClassName(pathname) {
+    const getLinkClassName = (pathname) => {
         return router.pathname == pathname ? "nav-link active" : "nav-link";
     }
 
