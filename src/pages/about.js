@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function About() {
     return (
@@ -6,10 +6,9 @@ export default function About() {
             <p className="about-text">
                 I am a
                 <span className="text-red"> Full Stack Web Developer </span> 
-                with +4 years of experience in developing applications for the world. 
-                I have been the lead developer in many projects across the years. 
-                I also am a <a target="_blank" rel="noopener noreferrer" href="https://u.magento.com/certification/directory/dev/2021818/">Magento 2 Professional Developer</a> and worked on many aspects of Magento customization and development. 
-                Very proeficient in Linux based systems. Lately I’ve been also developing Mobile apps.
+                with +5 years of experience in developing applications for the world. 
+                I have been the lead developer in many projects across the years, and I am a <a target="_blank" rel="noopener noreferrer" href="https://www.youracclaim.com/badges/10eb31fe-bec4-418b-b445-293e6835fb51/">Magento 2 Professional Developer</a> who worked on many aspects of Magento customization and development. 
+                Lately I've getting into the world of JavaScript libraries and frameworks.
             </p>
             
             <p className="offered-services-text text-center">Offered Services</p>

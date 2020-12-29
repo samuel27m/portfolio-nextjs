@@ -16,7 +16,7 @@ export default function Portfolio() {
         );
     }
 
-    const cols = 'col-lg-3 col-md-4 mr-auto ml-auto';
+    const cols = 'col-lg-6 col-md-6 mr-auto ml-auto';
 
     return (
         <div className="portfolio">
@@ -43,17 +43,6 @@ export default function Portfolio() {
                         { getLinkedButton('https://github.com/samuel27m/tindev-app') }
                     </div>
                 </div>
-                <div className={cols}>
-                    <div className="project-box">
-                        <div className="box-title">
-                            Uber
-                        </div>
-                        <div className="box-description">
-                            Clone of the old Uber app using React Native
-                        </div>
-                        { getLinkedButton('https://github.com/samuel27m/uber-app') }
-                    </div>
-                </div>
             </div>
             <div className="row justify-content-center">
                 <div className={cols}>
@@ -78,22 +67,11 @@ export default function Portfolio() {
                         { getLinkedButton('https://github.com/samuel27m/instagram-web') }
                     </div>
                 </div>
-                <div className={cols}>
-                    <div className="project-box">
-                        <div className="box-title">
-                            Countdown Doggo
-                        </div>
-                        <div className="box-description">
-                            Cause doggos. Using React.js
-                        </div>
-                        { getLinkedButton('https://samuel27m.github.io/countdown-doggo/') }
-                    </div>
-                </div>
             </div>
             
             <div className="justify-content-center no-margin">
                 <div className="col-lg-12 text-center">
-                    <p>And this website, of course. <a href="https://github.com/samuel27m/portfolio" target="_blank" rel="noopener noreferrer">Source code</a></p>
+                    <p>And this website, of course. <a href="https://github.com/samuel27m/portfolio-nextjs" target="_blank" rel="noopener noreferrer">Source code</a></p>
                 </div>
             </div>
 
