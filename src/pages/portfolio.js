@@ -29,7 +29,7 @@ export default function Portfolio() {
                         <div className="box-description">
                             Simple to-do list using React.js
                         </div>
-                        { getLinkedButton('https://samuel27m.github.io/react-todo/') }
+                        { getLinkedButton('https://react-todo.samuelcacador.com/') }
                     </div>
                 </div>
                 <div className={cols}>
