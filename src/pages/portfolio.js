@@ -24,7 +24,7 @@ export default function Portfolio() {
                 <div className={cols}>
                     <div className="project-box">
                         <div className="box-title">
-                            React TODO
+                            React TODO (Web app)
                         </div>
                         <div className="box-description">
                             Simple to-do list using React.js
@@ -35,7 +35,7 @@ export default function Portfolio() {
                 <div className={cols}>
                     <div className="project-box">
                         <div className="box-title">
-                            Tindev
+                            Tindev (Mobile app)
                         </div>
                         <div className="box-description">
                             Mobile app to match devs using React Native
@@ -48,7 +48,7 @@ export default function Portfolio() {
                 <div className={cols}>
                     <div className="project-box">
                         <div className="box-title">
-                            Instagram (Server)
+                            Instagram (Server) <b>Coming soon</b>
                         </div>
                         <div className="box-description">
                             Clone of Instagram, backend using Node.js, MongoDB and Sockets
@@ -59,7 +59,7 @@ export default function Portfolio() {
                 <div className={cols}>
                     <div className="project-box">
                         <div className="box-title">
-                            Instagram (Web)
+                            Instagram (Web app) <b>Coming soon</b>
                         </div>
                         <div className="box-description">
                             Clone of Instagram, frontend using React.js and Sockets
