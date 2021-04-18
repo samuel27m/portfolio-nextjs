@@ -45,10 +45,10 @@ export default function About() {
             </div>
 
             <div class="text-center">
-                <Link href='/portfolio'>
+                <Link href='/contact'>
                     <a>
                         <button className="btn center-block button">
-                            <span>Portfolio</span>
+                            <span>Contact</span>
                         </button>
                     </a>
                 </Link>

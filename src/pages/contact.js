@@ -3,8 +3,6 @@ export default function Contact() {
         <div className="contact">
             <h1 className="text-center contact-text">Let's work together!</h1>
             <h6 className="contact-subtext">
-                We all know how it goes. You have an amazing idea but you can't seem to find the right person to execute it.
-                <br/> <br/> 
                 Fill the form to get in touch with me! 
                 <br/> <br/> 
                 Or if you prefer you can get in touch via email <a href="mailto:me@samuelcacador.com">me@samuelcacador.com</a> and share your thoughts!

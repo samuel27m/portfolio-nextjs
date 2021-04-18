@@ -36,11 +36,6 @@ export default function Header() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/portfolio">
-                                <a className={getLinkClassName('/portfolio')}>Portfolio</a>
-                            </Link>
-                        </li>
-                        <li className="nav-item">
                             <Link href="/contact">
                                 <a className={getLinkClassName('/contact')}>Contact</a>
                             </Link>
