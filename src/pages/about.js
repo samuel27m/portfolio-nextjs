@@ -6,7 +6,7 @@ export default function About() {
             <p className="about-text">
                 I am a
                 <span className="text-red"> Full Stack Web Developer </span> 
-                with +5 years of experience in developing applications for the world. 
+                with +6 years of experience in developing applications for the world. 
                 I have been the lead developer in many projects across the years, and I am a <a target="_blank" rel="noopener noreferrer" href="https://www.youracclaim.com/badges/10eb31fe-bec4-418b-b445-293e6835fb51/">Magento 2 Professional Developer</a> who worked on many aspects of Magento customization and development. 
                 Lately I've getting into the world of JavaScript libraries and frameworks.
             </p>
