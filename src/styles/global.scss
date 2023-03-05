@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-
 $dark: #0b2027;
 $white: #fafffd;
 $black-olive: #3c3c3c;
@@ -12,6 +10,7 @@ $header-height: 100px;
 $footer-height: 45px;
 
 $mobile-width: 768px;
+
 @mixin mobile {
   @media (max-width: #{$mobile-width}) {
     @content;
@@ -73,7 +72,7 @@ body {
   position: relative;
 }
 
-.switch-wrapper > div {
+.switch-wrapper>div {
   position: absolute;
 }
 
@@ -251,6 +250,7 @@ a {
 
     .icons .icon {
       font-size: 64px;
+
       @include mobile {
         font-size: 48px;
       }
@@ -271,6 +271,7 @@ a {
 .contact {
   padding: 0px 30px;
   width: 70%;
+
   @include mobile {
     width: 100%;
   }
