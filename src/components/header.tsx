@@ -1,4 +1,5 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 export default function Header() {
@@ -7,9 +8,8 @@ export default function Header() {
     /**
      * Should link be active or not? Based on if the link is the current URL or not
      * Returns classes
-     * @param string pathname 
      */
-    const getLinkClassName = (pathname) => {
+    const getLinkClassName = (pathname: string) => {
         return router.pathname == pathname ? "nav-link active" : "nav-link";
     }
 
@@ -18,9 +18,9 @@ export default function Header() {
             <div className="container">
                 <div className="mx-auto order-0">
                     <div className="logo-wrapper">
-                        <Link href='/'>
+                        <Link legacyBehavior href='/'>
                             <a>
-                                <img src="/logo.svg" alt="logo" />
+                                <Image src="/logo.svg" alt="logo" width={100} height={100}/>
                             </a>
                         </Link>
                     </div>
@@ -31,12 +31,12 @@ export default function Header() {
                 <div className="navbar-collapse collapse w-100 order-1 dual-collapse2">
                     <ul className="navbar-nav ml-auto link-wrapper">
                         <li className="nav-item">
-                            <Link href="/about">
+                            <Link legacyBehavior href="/about">
                                 <a className={getLinkClassName('/about')}>About</a>
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/contact">
+                            <Link legacyBehavior href="/contact">
                                 <a className={getLinkClassName('/contact')}>Contact</a>
                             </Link>
                         </li>
@@ -44,6 +44,5 @@ export default function Header() {
                 </div>
             </div>
         </nav>
-
     );
 }
