@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export default function About() {
-    const now = new Date(2025,1);
+    const now = new Date();
     const march2018 = new Date(2015, 2);
     const experienceYears = now.getFullYear() - march2018.getFullYear()
         - (now < new Date(now.getFullYear(), march2018.getMonth(), march2018.getDate()) ? 1 : 0);
