@@ -8,7 +8,7 @@ export default function Home() {
         </p>
         <div className="text-center">
           <Link href='/about'>
-            <button className="btn center-block button">
+            <button className="btn button">
               <span>About me</span>
             </button>
           </Link>

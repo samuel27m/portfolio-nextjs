@@ -8,14 +8,14 @@ export default function Contact() {
                 Or if you prefer you can get in touch via email <a href="mailto:me@samuelcacador.com">me@samuelcacador.com</a> and share your thoughts!
             </h6>
             <form action="https://formspree.io/f/xvondvyl" method="POST" autoComplete="off">
-                <div className="form-group">
+                <div className="mb-3">
                     <input className="form-control" type="text" name="name" required placeholder="Your name" />
                 </div>
-                <div className="form-group">
+                <div className="mb-3">
                     <input className="form-control" type="email" name="email" required placeholder="Your email" />
                 </div>
                 <div className="text-center">
-                    <button type="submit" className="btn center-block button">
+                    <button type="submit" className="btn button">
                         <span>Submit</span>
                     </button>
                 </div>

@@ -24,12 +24,12 @@ export default function Header() {
                             </a>
                         </Link>
                     </div>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                 </div>
                 <div className="navbar-collapse collapse w-100 order-1 dual-collapse2">
-                    <ul className="navbar-nav ml-auto link-wrapper">
+                    <ul className="navbar-nav ms-auto link-wrapper">
                         <li className="nav-item">
                             <Link legacyBehavior href="/about">
                                 <a className={getLinkClassName('/about')}>About</a>

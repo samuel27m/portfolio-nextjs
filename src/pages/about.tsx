@@ -21,25 +21,25 @@ export default function About() {
             <div className="offered-services">
                 <div className="icons">
                     <div className="row">
-                        <div className="col-md-3 col-xs-12 text-center">
+                        <div className="col-md-3 col-12 text-center">
                             <span className="icon">
                                 <i className="fas fa-desktop"></i>
                             </span>
                             <p className="icon-text">Web Development</p>
                         </div>
-                        <div className="col-md-3 col-xs-12 text-center">
+                        <div className="col-md-3 col-12 text-center">
                             <span className="icon">
                                 <i className="fab fa-magento"></i>
                             </span>
                             <p className="icon-text">Magento Development</p>
                         </div>
-                        <div className="col-md-3 col-xs-12 text-center">
+                        <div className="col-md-3 col-12 text-center">
                             <span className="icon">
                                 <i className="fas fa-mobile-alt"></i>
                             </span>
                             <p className="icon-text">Mobile Applications</p>
                         </div>
-                        <div className="col-md-3 col-xs-12 text-center">
+                        <div className="col-md-3 col-12 text-center">
                             <span className="icon">
                                 <i className="fas fa-server"></i>
                             </span>
@@ -52,7 +52,7 @@ export default function About() {
             <div className="text-center">
                 <Link legacyBehavior href='/contact'>
                     <a>
-                        <button className="btn center-block button">
+                        <button className="btn button">
                             <span>Contact</span>
                         </button>
                     </a>

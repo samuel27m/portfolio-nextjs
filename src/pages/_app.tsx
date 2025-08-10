@@ -6,6 +6,7 @@ import Footer from '../components/footer';
 import { Montserrat } from 'next/font/google';
 import 'bootstrap/scss/bootstrap.scss'
 import '../styles/global.scss'
+import { useEffect } from 'react';
 
 const montserrat = Montserrat({
   weight: ['400', '700'],
@@ -14,6 +15,13 @@ const montserrat = Montserrat({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    // Load Bootstrap JS only on client-side
+    if (typeof window !== 'undefined') {
+      require('bootstrap/dist/js/bootstrap.bundle.min.js');
+    }
+  }, []);
+
   return (
     <div className={montserrat.className}>
       <Head>
