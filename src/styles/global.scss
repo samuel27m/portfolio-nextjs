@@ -37,7 +37,7 @@ body {
   }
 
   .link-wrapper {
-    float: right;
+    /* float: right; removed - using ms-auto in Bootstrap v5 */
   }
 
   .nav-item {
@@ -101,14 +101,19 @@ a {
 
   &:focus,
   &:active {
+    color: $white !important;
+    background-color: $metallic-seaweed !important;
+    border-color: $metallic-seaweed !important;
     outline: none !important;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
   }
 
   &:hover {
-    color: $white;
+    color: $white !important;
+    background-color: $metallic-seaweed !important;
     font-weight: bold;
+    border-color: $metallic-seaweed !important;
   }
 }
 
@@ -203,14 +208,19 @@ a {
 
       &:focus,
       &:active {
+        color: $white !important;
+        background-color: $metallic-seaweed !important;
+        border-color: $metallic-seaweed !important;
         outline: none !important;
         box-shadow: none !important;
         -webkit-box-shadow: none !important;
       }
 
       &:hover {
-        color: $white;
+        color: $white !important;
+        background-color: $metallic-seaweed !important;
         font-weight: bold;
+        border-color: $metallic-seaweed !important;
       }
     }
   }
